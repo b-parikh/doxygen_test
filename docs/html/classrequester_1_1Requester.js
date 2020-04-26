@@ -1,6 +1,8 @@
 var classrequester_1_1Requester =
 [
     [ "__init__", "classrequester_1_1Requester.html#a74f0208450e5cb160311eee1a3aad06b", null ],
+    [ "build_request_msg", "classrequester_1_1Requester.html#a5c41d5f8360b5acc3a67e16696648b32", null ],
+    [ "built_polygons_cb", "classrequester_1_1Requester.html#a738a13ec606d3398f3bf2575e80617ee", null ],
     [ "possibleColors", "classrequester_1_1Requester.html#a10464c968598120e9f7d90c57c200530", null ],
     [ "possibleTypes", "classrequester_1_1Requester.html#a7253cde42cee297186765faa3705bb61", null ],
     [ "requestFrequency", "classrequester_1_1Requester.html#a2568cc74ea72880cccb44c16651afb20", null ],

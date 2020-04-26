@@ -15,6 +15,8 @@
 #   - None
 # - INTERFACES:
 #   - None
+# - LAUNCH FILES THIS NODE APPEARS IN:
+#   - begin_test.launch
 
 import random
 
@@ -54,12 +56,22 @@ class Requester:
         rospy.init_node("Requester")
         print(rosnode.get_node_names())
 
+    ##
+    # @brief Callback for /builtPolygons topic
+    #
+    # Parses the list of already built polygons that arrive on the topic
+    # @param[in] msg incoming msg from topic
+    # @return all built polygons
     def built_polygons_cb(self, msg):
         built_polygons = []
         for poly in msg.polygons:
             built_polygons.append((poly.type, poly.sideLength, poly.color))
         rospy.loginfo("built polygons: " + str(built_polygons))
+        return built_polygons
 
+    ##
+    # @brief Create a request to build a random polygon
+    # @return msg (PolyonBuildData type) with polygon request
     def build_request_msg(self):
         msg = PolygonBuildData()
         msg.type = random.choice(self.possibleTypes)

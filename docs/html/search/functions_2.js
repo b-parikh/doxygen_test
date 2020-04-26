@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['getcolor',['getColor',['../classRegularPolygon.html#a1299ad60b3368f9ce6542c7cf1b449cd',1,'RegularPolygon']]],
-  ['getsidelength',['getSideLength',['../classRegularPolygon.html#a820414b31b63df0b4b69b445b96d94f4',1,'RegularPolygon::getSideLength()'],['../classTriangle.html#ae1e162b9f6118ae351a06e5f4a1e0eea',1,'Triangle::getSidelength()'],['../classSquare.html#a4ef2b848a835110fcc90baa8e4143390',1,'Square::getSidelength()']]],
-  ['gettype',['getType',['../classRegularPolygon.html#aba364d2a40f3f46f5e14838a8f93d767',1,'RegularPolygon']]]
+  ['createbuiltpolygonsmessage',['createBuiltPolygonsMessage',['../creator_8cpp.html#a87de4e577999be02736349f99dcae875',1,'creator.cpp']]],
+  ['createnewpolygoncb',['createNewPolygonCb',['../creator_8cpp.html#a9497bd53f8e914f5081c283c8ce929c2',1,'creator.cpp']]]
 ];
