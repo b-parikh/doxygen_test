@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['color_5f',['color_',['../classRegularPolygon.html#aa53594a721fb8555914c7bab91669602',1,'RegularPolygon']]]
+  ['possiblecolors',['possibleColors',['../classrequester_1_1Requester.html#a10464c968598120e9f7d90c57c200530',1,'requester::Requester']]],
+  ['possibletypes',['possibleTypes',['../classrequester_1_1Requester.html#a7253cde42cee297186765faa3705bb61',1,'requester::Requester']]]
 ];

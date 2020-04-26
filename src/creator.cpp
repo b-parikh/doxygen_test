@@ -17,6 +17,9 @@
  *   - None
  * - INTERFACES:
  *   - None
+ *
+ * - LAUNCH FILES THIS NODE IS IN:
+ *   - begin_test.launch
  */
 
 #include <vector>
@@ -32,7 +35,7 @@
 #include "../include/RegularPolygon.h"
 
 
-#define NODE_NAME "creator"  /**< Node name */
+#define NODE_NAME "Creator"  /**< Node name */
 #define PUBLISH_RATE 0.5 /**< Rate of publishing in hertz */
 
 std::vector<std::shared_ptr<RegularPolygon>> allPolygons;  /**< Stores all polygons that have been created already. */
@@ -115,17 +118,17 @@ doxygen_test::PolygonBuildDataArr createBuiltPolygonsMessage() {
     return msg;
 }
 
-//void sigIntHandler(int sig) {
-//    ros::shutdown();
-//    ROS_INFO("Node shut down");
-//}
+void sigIntHandler(int sig) {
+    ROS_INFO("Node shut down");
+    ros::shutdown();
+}
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "creator");
+    ros::init(argc, argv, NODE_NAME);
     ros::NodeHandle nh;
 
-    //signal(SIGINT, sigIntHandler);
+    signal(SIGINT, sigIntHandler);
 
     ros::Subscriber sub = nh.subscribe("/polygonRequests", 10, createNewPolygonCb);
     ros::Publisher builtPolygonsPub = nh.advertise<doxygen_test::PolygonBuildDataArr>("/builtPolygons", 10);
@@ -137,7 +140,6 @@ int main(int argc, char **argv)
         ros::spinOnce();
         r.sleep();
     }
-    ros::spin();
 
     return 0;
 }

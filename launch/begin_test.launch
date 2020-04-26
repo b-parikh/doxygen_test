@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <master auto="start" />
+
+    <!-- START LAUNCHING -->
+    <node name="Requester" pkg="doxygen_test" type="requester.py" />
+    <node name="Creator" pkg="doxygen_test" type="creator" />
+</launch>

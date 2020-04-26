@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('creator_8cpp.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Creates and stores <a class="el" href="classRegularPolygon.html" title="An interface to represent regular polygons. ">RegularPolygon</a> instances based on incoming msgs.  
+<p>Creates and stores RegularPolygon instances based on incoming msgs.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -122,13 +122,13 @@ $(document).ready(function(){initNavTree('creator_8cpp.html','');});
 <code>#include &quot;std_msgs/String.h&quot;</code><br />
 <code>#include &quot;doxygen_test/PolygonBuildData.h&quot;</code><br />
 <code>#include &quot;doxygen_test/PolygonBuildDataArr.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="RegularPolygon_8h_source.html">../include/RegularPolygon.h</a>&quot;</code><br />
+<code>#include &quot;../include/RegularPolygon.h&quot;</code><br />
 </div>
 <p><a href="creator_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a8cc8d559acdd2f74085b20977182d5b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="creator_8cpp.html#a8cc8d559acdd2f74085b20977182d5b7">NODE_NAME</a>&#160;&#160;&#160;&quot;creator&quot;</td></tr>
+<tr class="memitem:a8cc8d559acdd2f74085b20977182d5b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="creator_8cpp.html#a8cc8d559acdd2f74085b20977182d5b7">NODE_NAME</a>&#160;&#160;&#160;&quot;Creator&quot;</td></tr>
 <tr class="separator:a8cc8d559acdd2f74085b20977182d5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab36fa54d593b7435a597d72d6cfda438"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="creator_8cpp.html#ab36fa54d593b7435a597d72d6cfda438">PUBLISH_RATE</a>&#160;&#160;&#160;0.5</td></tr>
 <tr class="separator:ab36fa54d593b7435a597d72d6cfda438"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,13 +144,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5059a1f3d98b703c415dd4894b1f035c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classRegularPolygon.html">RegularPolygon</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="creator_8cpp.html#a5059a1f3d98b703c415dd4894b1f035c">allPolygons</a></td></tr>
+<tr class="memitem:a5059a1f3d98b703c415dd4894b1f035c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; RegularPolygon &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="creator_8cpp.html#a5059a1f3d98b703c415dd4894b1f035c">allPolygons</a></td></tr>
 <tr class="separator:a5059a1f3d98b703c415dd4894b1f035c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Biraj Parikh </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>April 24, 2020</dd></dl>
-<p>A node to create and store all <a class="el" href="classRegularPolygon.html" title="An interface to represent regular polygons. ">RegularPolygon</a> instances. Peridically, the node will broadcast a list of all the polygons that it has already been asked to created.</p>
+<p>A node to create and store all RegularPolygon instances. Peridically, the node will broadcast a list of all the polygons that it has already been asked to created.</p>
 <ul>
 <li>PARAMETERS:<ul>
 <li>None</li>
@@ -169,7 +169,11 @@ Variables</h2></td></tr>
 </ul>
 </li>
 <li>INTERFACES:<ul>
-<li>None </li>
+<li>None</li>
+</ul>
+</li>
+<li>LAUNCH FILES THIS NODE IS IN:<ul>
+<li><a class="el" href="begin__test_8launch_source.html">begin_test.launch</a> </li>
 </ul>
 </li>
 </ul>
@@ -181,13 +185,13 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NODE_NAME&#160;&#160;&#160;&quot;creator&quot;</td>
+          <td class="memname">#define NODE_NAME&#160;&#160;&#160;&quot;Creator&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Node name </p>
 
-<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00035">35</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00038">38</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
 
 </div>
 </div>
@@ -202,7 +206,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Rate of publishing in hertz </p>
 
-<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00036">36</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00039">39</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
 
 </div>
 </div>
@@ -222,7 +226,7 @@ Variables</h2></td></tr>
 <p>Builds a PolygonBuildDataArr msg consisting of every previously created polygon's info. The previously created polygons are stored in allPolygons. This message is published onto /builtPolygons topic.</p>
 <dl class="section return"><dt>Returns</dt><dd>doxygen_test::PolygonBuildDataArr with all built polygon info. </dd></dl>
 
-<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00093">93</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00096">96</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +251,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00048">48</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00051">51</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,13 +261,13 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classRegularPolygon.html">RegularPolygon</a>&gt; &gt; allPolygons</td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;RegularPolygon&gt; &gt; allPolygons</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Stores all polygons that have been created already. </p>
 
-<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00038">38</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
+<p>Definition at line <a class="el" href="creator_8cpp_source.html#l00041">41</a> of file <a class="el" href="creator_8cpp_source.html">creator.cpp</a>.</p>
 
 </div>
 </div>

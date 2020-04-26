@@ -19,6 +19,7 @@
 import random
 
 import rospy
+import rosnode
 from doxygen_test.msg import PolygonBuildData, PolygonBuildDataArr
 
 ##
@@ -50,7 +51,8 @@ class Requester:
         ## frequency (hertz) at which requests should be sent
         self.requestFrequency = 1 
 
-        rospy.init_node("Requester", anonymous=True)
+        rospy.init_node("Requester")
+        print(rosnode.get_node_names())
 
     def built_polygons_cb(self, msg):
         built_polygons = []
