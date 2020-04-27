@@ -6,7 +6,10 @@
 # @date April 24, 2020
 #
 # - PARAMETERS:
-#   - None
+#   - min_side_length
+#   - max_side_length
+# - YAML FILES:
+#   - requester_params.yaml
 # - PUBLISHES:
 #   - /polygonRequests
 # - SUBSCRIBES:
@@ -75,7 +78,9 @@ class Requester:
     def build_request_msg(self):
         msg = PolygonBuildData()
         msg.type = random.choice(self.possibleTypes)
-        msg.sideLength = random.randint(1, 10)
+        minSideLength = rospy.get_param("min_side_length", 1)
+        maxSideLength = rospy.get_param("max_side_length", 10)
+        msg.sideLength = random.randint(minSideLength, maxSideLength)
         msg.color = random.choice(self.possibleColors)
         return msg
 

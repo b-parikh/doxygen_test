@@ -1,0 +1,2 @@
+min_side_length: 3  # integer required
+max_side_length: 12 # integer required

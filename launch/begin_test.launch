@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-
-    <master auto="start" />
+    <rosparam file="$(find doxygen_test)/config/requester_params.yaml" />
 
     <!-- START LAUNCHING -->
     <node name="Requester" pkg="doxygen_test" type="requester.py" />

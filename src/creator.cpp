@@ -18,7 +18,7 @@
  * - INTERFACES:
  *   - None
  *
- * - LAUNCH FILES THIS NODE IS IN:
+ * - LAUNCH FILES: 
  *   - begin_test.launch
  */
 
