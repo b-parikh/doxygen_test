@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "Doxygen Test", "index.html", [
+    [ "DOXYGEN_TEST", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

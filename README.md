@@ -13,3 +13,5 @@ creating them, the creator stores these polygons. The requester asks the creator
 polygons with certain specifications. At a set frequency, the creator will publish a list of all
 the polygons that it has created so far. The requester reads this list and prints it out on
 ROS_INFO. 
+
+To generate documentation, install Doxygen 
